@@ -2,21 +2,34 @@
 #Addition
 
 def add(a,b)
-        c = a+b
-        return c
-    end
+    c = a+b
+    return c
+end
     
     #Soustraction 
     
-    def sutract(a,b)
-        c=b-a
-        return c
-    end
+def sutract(a,b)
+    c=b-a
+    return c
+end
     
     #computes the sum of array
     
-    def sum(array)
-        return array.sum 
-    end
+def sum(array)
+    return array.sum 
+end
+
+
+def multiply(a,b)
+    c =a*b
+    return c 
+end
+
+
+def multiply(a,b)
+    c =a**b
+    return c 
+end
+
 
     # rspec spec/02_calculator_spec.rb

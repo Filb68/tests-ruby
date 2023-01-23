@@ -36,6 +36,7 @@ describe "sum" do
   it "computes the sum of an array of many numbers" do
     expect(sum([1,3,5,7,9])).to eq(25)
   end
+
 end
 
 # Let's write some tests !
@@ -48,15 +49,31 @@ describe "#multiply" do
   end
 
   it "multiplies two other numbers"
+    expect(multiply(4, 5)).to eq(20)
     # one other test here, don't forget do end ;)
 
   it "multiplies two other numbers, one of them being 0"
+    expect(multiply(6, 0)).to eq(0)
     # one last test, with 0 in it
+  end
 
 end
 
 describe "#power" do
   it "raises one number to the power of another number"
+
+  it "multiplies two numbers" do
+    expect(multiply(2,2)).to eq(4)
+  end
+
+  it "multiplies two other numbers"
+    expect(multiply(3,3)).to eq(81)
+    # one other test here, don't forget do end ;)
+
+  it "multiplies two other numbers, one of them being 0"
+    expect(multiply(2, 3)).to eq(16)
+    # one last test, with 0 in it
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
@@ -67,3 +84,5 @@ describe "#factorial" do
   it "computes the factorial of 5"
   it "computes the factorial of 10"
 end
+
+#  rspec spec/02_calculator_spec.rb
